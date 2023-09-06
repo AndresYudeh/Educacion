@@ -1,9 +1,9 @@
 <?php 
 // DB credentials.
-define('DB_HOST','localhost');
+define('DB_HOST','containers-us-west-75.railway.app');
 define('DB_USER','root');
-define('DB_PASS','2012116664');
-define('DB_NAME','eduauth');
+define('DB_PASS','qa9LFcXhrwKT8nPOKPiu');
+define('DB_NAME','railway');
 // Establish database connection.
 try
 {
@@ -15,4 +15,4 @@ exit("Error: " . $e->getMessage());
 }
 ?><!--  Orginal Author Name: CompuBinario K. 
  for any PHP, Codeignitor, Laravel OR Python work contact me at CompuBinario.infospace@gmail.com  
- Visit website : www.CompuBinariok.com -->  
+ Visit website : www.CompuBinariok.com -->   

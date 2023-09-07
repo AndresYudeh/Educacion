@@ -4,6 +4,7 @@ define('DB_HOST','beduca.mysql.database.azure.com');
 define('DB_USER','Andres');
 define('DB_PASS','A11224477a');
 define('DB_NAME','eduauth');
+ssl-mode=require
 // Establish database connection.
 try
 {

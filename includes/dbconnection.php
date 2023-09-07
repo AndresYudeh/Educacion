@@ -1,9 +1,9 @@
 <?php 
 // DB credentials.
-define('DB_HOST','containers-us-west-75.railway.app');
-define('DB_USER','root');
-define('DB_PASS','qa9LFcXhrwKT8nPOKPiu');
-define('DB_NAME','railway');
+define('DB_HOST','beduca.mysql.database.azure.com');
+define('DB_USER','Andres');
+define('DB_PASS','A11224477a');
+define('DB_NAME','eduauth');
 // Establish database connection.
 try
 {

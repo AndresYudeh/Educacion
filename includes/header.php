@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
    
-    <title>Edu Authorities Student Management System|| Update About Us</title>
+    <title>Gestión de Estudiantes</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets/vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
@@ -67,23 +67,23 @@ if($query->rowCount() > 0)
 foreach($results as $row)
 {               ?>
         <div class="navbar-menu-wrapper d-flex align-items-center flex-grow-1">
-          <h5 class="mb-0 font-weight-medium d-none d-lg-flex mx-auto"><?php  echo htmlentities($row->AdminName);?> BIENVENIDO A MI SISTEMA !</h5>
+          <h5 class="mb-0 font-weight-medium d-none d-lg-flex mx-auto">Bienvenido <?php  echo htmlentities($row->AdminName);?>!</h5>
           <div id="google_translate_element" class="ml-auto"></div>
 
           <ul class="navbar-nav navbar-nav-right ml-auto">
             <li class="nav-item dropdown d-none d-xl-inline-flex user-dropdown">
               <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-                <img class="img-xs rounded-circle ml-2" src="assets/images/faces/face8.jpg" alt="Profile image"> <span class="font-weight-normal"> <?php  echo htmlentities($row->AdminName);?> </span></a>
+                <img class="img-xs rounded-circle ml-2" src="assets/images/faces/face9.png" alt="Profile image"> <span class="font-weight-normal"> <?php  echo htmlentities($row->AdminName);?> </span></a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                 <div class="dropdown-header d-flex">
-                  <img class="img-md rounded-circle" src="assets/images/faces/face8.jpg" width="60px" alt="Profile image">
+                  <img class="img-md rounded-circle" src="assets/images/faces/face9.png" width="60px" alt="Profile image">
                   <div><p class="mb-1 mt-3"><?php  echo htmlentities($row->AdminName);?></p>
                   <p class="font-weight-light text-muted mb-0"><?php  echo htmlentities($row->Email);?></p> </div>
                   
                 </div><?php $cnt=$cnt+1;}} ?>
-                <a class="dropdown-item" href="profile.php"><i class="dropdown-item-icon icon-user text-primary"></i> My Profile</a>
-                <a class="dropdown-item" href="change-password.php"><i class="dropdown-item-icon icon-energy text-primary"></i> Change Password</a>
-                <a class="dropdown-item" href="logout.php"><i class="dropdown-item-icon icon-power text-primary"></i>Sign Out</a>
+                <a class="dropdown-item" href="profile.php"><i class="dropdown-item-icon icon-user text-primary"></i> Mi Perfil</a>
+                <a class="dropdown-item" href="change-password.php"><i class="dropdown-item-icon icon-energy text-primary"></i> Cambiar Contraseña</a>
+                <a class="dropdown-item" href="logout.php"><i class="dropdown-item-icon icon-power text-primary"></i>Cerrar Sesión</a>
               </div>
             </li>
           </ul>

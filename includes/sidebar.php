@@ -43,8 +43,8 @@
               </a>
               <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="add-class.php">Add Class</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="manage-class.php">Manage Class</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="add-class.php">Agregar Clase</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="manage-class.php">Administrar Clases</a></li>
                 </ul>
               </div>
             </li>
@@ -55,8 +55,8 @@
               </a>
               <div class="collapse" id="ui-basic1">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="add-students.php">Add Students</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="manage-students.php">Manage Students</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="add-students.php">Agregar Estudiante</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="manage-students.php">Admin. Estudiantes</a></li>
                 </ul>
               </div>
             </li>
@@ -71,8 +71,8 @@
               </a>
               <div class="collapse" id="auth">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="add-notice.php"> Add Notice </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="manage-notice.php"> Manage Notice </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="add-notice.php"> Agregar Noticia </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="manage-notice.php"> Administrar Noticias </a></li>
                 </ul>
               </div>
             </li>
@@ -83,8 +83,8 @@
               </a>
               <div class="collapse" id="auth1">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="add-public-notice.php"> Add Public Notice </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="manage-public-notice.php"> Manage Public Notice </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="add-public-notice.php"> Agg Noticia Pública </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="manage-public-notice.php"> Administrar Noticias Públicas </a></li>
                 </ul>
               </div>
             <!--   <li class="nav-item">

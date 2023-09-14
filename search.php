@@ -32,11 +32,11 @@ $query->execute();
         <div class="main-panel">
           <div class="content-wrapper">
              <div class="page-header">
-              <h3 class="page-title"> Search Student </h3>
+              <h3 class="page-title"> Buscar Estudiante por ID </h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"> Search Student</li>
+                  <li class="breadcrumb-item active" aria-current="page"> Buscar</li>
                 </ol>
               </nav>
             </div>
@@ -46,11 +46,11 @@ $query->execute();
                   <div class="card-body">
                     <form method="post">
                                 <div class="form-group">
-                                   <strong>Search Student:</strong>
+                                   <strong>Buscar Estudiante:</strong>
                                    
-                                    <input id="searchdata" type="text" name="searchdata" required="true" class="form-control" placeholder="Search by Student ID"></div>
+                                    <input id="searchdata" type="text" name="searchdata" required="true" class="form-control" placeholder="Buscar estudiante por ID"></div>
                                
-                                <button type="submit" class="btn btn-primary" name="search" id="submit">Search</button>
+                                <button type="submit" class="btn btn-primary" name="search" id="submit">Buscar</button>
                             </form>
                     <div class="d-sm-flex align-items-center mb-4">
 

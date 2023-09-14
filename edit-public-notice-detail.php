@@ -33,11 +33,11 @@ $query->bindParam(':eid',$eid,PDO::PARAM_STR);
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Update Notice </h3>
+              <h3 class="page-title">Actualizar Noticia Pública </h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"> Update Notice</li>
+                  <li class="breadcrumb-item active" aria-current="page"> Actualizar Notícia</li>
                 </ol>
               </nav>
             </div>
@@ -46,7 +46,7 @@ $query->bindParam(':eid',$eid,PDO::PARAM_STR);
               <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title" style="text-align: center;">Update Notice</h4>
+                    <!-- <h4 class="card-title" style="text-align: center;">Update Notice</h4> -->
                    
                     <form class="forms-sample" method="post" enctype="multipart/form-data">
                       <?php
@@ -62,15 +62,15 @@ if($query->rowCount() > 0)
 foreach($results as $row)
 {               ?>
                       <div class="form-group">
-                        <label for="exampleInputName1">Notice Title</label>
+                        <label for="exampleInputName1">Título de la Noticia</label>
                         <input type="text" name="nottitle" value="<?php  echo htmlentities($row->NoticeTitle);?>" class="form-control" required='true'>
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputName1">Notice Message</label>
+                        <label for="exampleInputName1">Mensaje de Aviso</label>
                         <textarea name="notmsg" value="" class="form-control" required='true'><?php  echo htmlentities($row->NoticeMessage);?></textarea>
                       </div>
                    <?php $cnt=$cnt+1;}} ?>
-                      <button type="submit" class="btn btn-primary mr-2" name="submit">Update</button>
+                      <button type="submit" class="btn btn-primary mr-2" name="submit">Actualizar</button>
                      
                     </form>
                   </div>

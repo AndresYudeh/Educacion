@@ -35,11 +35,11 @@ echo "<script>window.location.href ='add-class.php'</script>";
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title"> Add Class </h3>
+              <h3 class="page-title"> Agregar Clase Nueva </h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"> Add Class</li>
+                  <li class="breadcrumb-item active" aria-current="page"> Agregar Clase</li>
                 </ol>
               </nav>
             </div>
@@ -52,13 +52,13 @@ echo "<script>window.location.href ='add-class.php'</script>";
                     <form class="forms-sample" method="post">
                       
                       <div class="form-group">
-                        <label for="exampleInputName1">Class Name</label>
+                        <label for="exampleInputName1">Nombre de la Clase</label>
                         <input type="text" name="cname" value="" class="form-control" required='true'>
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputEmail3">Section</label>
+                        <label for="exampleInputEmail3">Paralelo</label>
                         <select  name="section" class="form-control" required='true'>
-                          <option value="">Choose Section</option>
+                          <option value="">Opciones Disponibles</option>
                           <option value="A">A</option>
                           <option value="B">B</option>
                           <option value="C">C</option>
@@ -67,7 +67,7 @@ echo "<script>window.location.href ='add-class.php'</script>";
                           <option value="F">F</option>
                         </select>
                       </div>
-                      <button type="submit" class="btn btn-primary mr-2" name="submit">Add</button>
+                      <button type="submit" class="btn btn-primary mr-2" name="submit">Agregar</button>
                      
                     </form>
                   </div>

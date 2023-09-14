@@ -37,11 +37,11 @@ echo "<script>window.location.href ='add-public-notice.php'</script>";
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Add Notice </h3>
+              <h3 class="page-title">Agregar Noticia Pública </h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"> Add Notice</li>
+                  <li class="breadcrumb-item active" aria-current="page"> Agg Noticia Pública</li>
                 </ol>
               </nav>
             </div>
@@ -55,15 +55,15 @@ echo "<script>window.location.href ='add-public-notice.php'</script>";
                     <form class="forms-sample" method="post" enctype="multipart/form-data">
                       
                       <div class="form-group">
-                        <label for="exampleInputName1">Notice Title</label>
+                        <label for="exampleInputName1">Título</label>
                         <input type="text" name="nottitle" value="" class="form-control" required='true'>
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputName1">Notice Message</label>
+                        <label for="exampleInputName1">Mensaje de Áviso</label>
                         <textarea name="notmsg" value="" class="form-control"></textarea>
                       </div>
                    
-                      <button type="submit" class="btn btn-primary mr-2" name="submit">Add</button>
+                      <button type="submit" class="btn btn-primary mr-2" name="submit">Agregar</button>
                      
                     </form>
                   </div>

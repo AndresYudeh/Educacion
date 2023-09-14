@@ -30,11 +30,11 @@ $query->execute();
         <div class="main-panel">
           <div class="content-wrapper">
              <div class="page-header">
-              <h3 class="page-title"> Manage Class </h3>
+              <h3 class="page-title"> Administrar Clases </h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"> Manage Class</li>
+                  <li class="breadcrumb-item active" aria-current="page"> Administrar Clases</li>
                 </ol>
               </nav>
             </div>
@@ -43,18 +43,18 @@ $query->execute();
                 <div class="card">
                   <div class="card-body">
                     <div class="d-sm-flex align-items-center mb-4">
-                      <h4 class="card-title mb-sm-0">Manage Class</h4>
-                      <a href="#" class="text-dark ml-auto mb-3 mb-sm-0"> View all Classes</a>
+                      <h4 class="card-title mb-sm-0">Clases Disponibles</h4>
+                      <!-- <a href="#" class="text-dark ml-auto mb-3 mb-sm-0"> View all Classes</a> -->
                     </div>
                     <div class="table-responsive border rounded p-1">
                       <table class="table">
                         <thead>
                           <tr>
                             <th class="font-weight-bold">S.No</th>
-                            <th class="font-weight-bold">Class Name</th>
-                            <th class="font-weight-bold">Section</th>
-                            <th class="font-weight-bold">Creation Date</th>
-                            <th class="font-weight-bold">Action</th>
+                            <th class="font-weight-bold">Nombre</th>
+                            <th class="font-weight-bold">Paralelo</th>
+                            <th class="font-weight-bold">Fecha de Creación</th>
+                            <th class="font-weight-bold">Mod./Elim.</th>
                             
                           </tr>
                         </thead>

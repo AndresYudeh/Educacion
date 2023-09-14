@@ -32,11 +32,11 @@ $query->execute();
         <div class="main-panel">
           <div class="content-wrapper">
              <div class="page-header">
-              <h3 class="page-title"> Manage Notice </h3>
+              <h3 class="page-title"> Administrar Noticias </h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"> Manage Notice</li>
+                  <li class="breadcrumb-item active" aria-current="page"> Administrar Noticias</li>
                 </ol>
               </nav>
             </div>
@@ -45,19 +45,19 @@ $query->execute();
                 <div class="card">
                   <div class="card-body">
                     <div class="d-sm-flex align-items-center mb-4">
-                      <h4 class="card-title mb-sm-0">Manage Notice</h4>
-                      <a href="#" class="text-dark ml-auto mb-3 mb-sm-0"> View all Notice</a>
+                      <h4 class="card-title mb-sm-0">Noticias Disponibles</h4>
+                      <!-- <a href="#" class="text-dark ml-auto mb-3 mb-sm-0"> View all Notice</a> -->
                     </div>
                     <div class="table-responsive border rounded p-1">
                       <table class="table">
                         <thead>
                           <tr>
                             <th class="font-weight-bold">S.No</th>
-                            <th class="font-weight-bold">Notice Title</th>
-                            <th class="font-weight-bold">Class</th>
-                            <th class="font-weight-bold">Section</th>
-                            <th class="font-weight-bold">Notice Date</th>
-                            <th class="font-weight-bold">Action</th>
+                            <th class="font-weight-bold">Título</th>
+                            <th class="font-weight-bold">Clase</th>
+                            <th class="font-weight-bold">Paralelo</th>
+                            <th class="font-weight-bold">Fecha de Creación</th>
+                            <th class="font-weight-bold">Mod./Elim.</th>
                             
                           </tr>
                         </thead>

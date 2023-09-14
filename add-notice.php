@@ -38,11 +38,11 @@ echo "<script>window.location.href ='add-notice.php'</script>";
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Add Notice </h3>
+              <h3 class="page-title">Agregar Noticia </h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"> Add Notice</li>
+                  <li class="breadcrumb-item active" aria-current="page"> Agregar Noticia</li>
                 </ol>
               </nav>
             </div>
@@ -51,19 +51,19 @@ echo "<script>window.location.href ='add-notice.php'</script>";
               <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title" style="text-align: center;">Add Notice</h4>
+                    <h4 class="card-title" style="text-align: center;">Agregar Nueva Noticia</h4>
                    
                     <form class="forms-sample" method="post" enctype="multipart/form-data">
                       
                       <div class="form-group">
-                        <label for="exampleInputName1">Notice Title</label>
+                        <label for="exampleInputName1">Título</label>
                         <input type="text" name="nottitle" value="" class="form-control" required='true'>
                       </div>
                      
                       <div class="form-group">
-                        <label for="exampleInputEmail3">Notice For</label>
+                        <label for="exampleInputEmail3">Noticia para</label>
                         <select  name="classid" class="form-control" required='true'>
-                          <option value="">Select Class</option>
+                          <option value="">Seleccione una Clase</option>
                          <?php 
 
 $sql2 = "SELECT * from    tblclass ";
@@ -79,11 +79,11 @@ foreach($result2 as $row1)
                         </select>
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputName1">Notice Message</label>
+                        <label for="exampleInputName1">Mensaje de Avíso</label>
                         <textarea name="notmsg" value="" class="form-control"></textarea>
                       </div>
                    
-                      <button type="submit" class="btn btn-primary mr-2" name="submit">Add</button>
+                      <button type="submit" class="btn btn-primary mr-2" name="submit">Agregar</button>
                      
                     </form>
                   </div>

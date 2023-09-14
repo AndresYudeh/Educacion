@@ -50,11 +50,11 @@ $query->bindParam(':eid',$eid,PDO::PARAM_STR);
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title"> Update Students </h3>
+              <h3 class="page-title"> Administrar Registro de Estudiantes </h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"> Update Students</li>
+                  <li class="breadcrumb-item active" aria-current="page"> Administrar Estudiantes</li>
                 </ol>
               </nav>
             </div>
@@ -63,7 +63,7 @@ $query->bindParam(':eid',$eid,PDO::PARAM_STR);
               <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title" style="text-align: center;">Update Students</h4>
+                    <h4 class="card-title" style="text-align: center;">Información del Estudiante</h4>
                    
                     <form class="forms-sample" method="post" enctype="multipart/form-data">
                       <?php
@@ -79,15 +79,15 @@ if($query->rowCount() > 0)
 foreach($results as $row)
 {               ?>
                       <div class="form-group">
-                        <label for="exampleInputName1">Student Name</label>
+                        <label for="exampleInputName1">Nombre</label>
                         <input type="text" name="stuname" value="<?php  echo htmlentities($row->StudentName);?>" class="form-control" required='true'>
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputName1">Student Email</label>
+                        <label for="exampleInputName1">Correo Electrónico</label>
                         <input type="text" name="stuemail" value="<?php  echo htmlentities($row->StudentEmail);?>" class="form-control" required='true'>
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputEmail3">Student Class</label>
+                        <label for="exampleInputEmail3">Clase</label>
                         <select  name="stuclass" class="form-control" required='true'>
                           <option value="<?php  echo htmlentities($row->StudentClass);?>"><?php  echo htmlentities($row->ClassName);?> <?php  echo htmlentities($row->Section);?></option>
                          <?php 
@@ -105,57 +105,57 @@ foreach($result2 as $row1)
                         </select>
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputName1">Gender</label>
+                        <label for="exampleInputName1">Género</label>
                         <select name="gender" value="" class="form-control" required='true'>
-                          <option value="<?php  echo htmlentities($row->Gender);?>"><?php  echo htmlentities($row->Gender);?></option>
-                          <option value="Male">Male</option>
-                          <option value="Female">Female</option>
+                          <option value="<?php  echo htmlentities($row->Gender);?>">Selecciona el Género</option>
+                          <option value="Male">Masculino</option>
+                          <option value="Female">Femenino</option>
                         </select>
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputName1">Date of Birth</label>
+                        <label for="exampleInputName1">Fecha de Nacimiento</label>
                         <input type="date" name="dob" value="<?php  echo htmlentities($row->DOB);?>" class="form-control" required='true'>
                       </div>
                      
                       <div class="form-group">
-                        <label for="exampleInputName1">Student ID</label>
+                        <label for="exampleInputName1">ID</label>
                         <input type="text" name="stuid" value="<?php  echo htmlentities($row->StuID);?>" class="form-control" readonly='true'>
                       </div>
-                      <div class="form-group">
+                      <!-- <div class="form-group">
                         <label for="exampleInputName1">Student Photo</label>
                         <img src="assets/images/<?php echo $row->Image;?>" width="100" height="100" value="<?php  echo $row->Image;?>"><a href="changeimage.php?editid=<?php echo $row->ID;?>"> &nbsp; Edit Image</a>
-                      </div>
-                      <h3>Parents/Guardian's details</h3>
+                      </div> -->
+                      <h3>Información de Tutor/es Responsable</h3>
                       <div class="form-group">
-                        <label for="exampleInputName1">Father's Name</label>
+                        <label for="exampleInputName1">Nombre de Papá</label>
                         <input type="text" name="fname" value="<?php  echo htmlentities($row->FatherName);?>" class="form-control" required='true'>
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputName1">Mother's Name</label>
+                        <label for="exampleInputName1">Nombre de Mamá</label>
                         <input type="text" name="mname" value="<?php  echo htmlentities($row->MotherName);?>" class="form-control" required='true'>
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputName1">Contact Number</label>
+                        <label for="exampleInputName1">Número Celular</label>
                         <input type="text" name="connum" value="<?php  echo htmlentities($row->ContactNumber);?>" class="form-control" required='true' maxlength="10" pattern="[0-9]+">
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputName1">Alternate Contact Number</label>
+                        <label for="exampleInputName1">Número Celular Alternativo</label>
                         <input type="text" name="altconnum" value="<?php  echo htmlentities($row->AltenateNumber);?>" class="form-control" required='true' maxlength="10" pattern="[0-9]+">
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputName1">Address</label>
+                        <label for="exampleInputName1">Dirección de Domicílio</label>
                         <textarea name="address" class="form-control" required='true'><?php  echo htmlentities($row->Address);?></textarea>
                       </div>
-<h3>Login details</h3>
+<h3>Credenciales</h3>
 <div class="form-group">
-                        <label for="exampleInputName1">User Name</label>
+                        <label for="exampleInputName1">Usuario</label>
                         <input type="text" name="uname" value="<?php  echo htmlentities($row->UserName);?>" class="form-control" readonly='true'>
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputName1">Password</label>
+                        <label for="exampleInputName1">Contraseña</label>
                         <input type="Password" name="password" value="<?php  echo htmlentities($row->Password);?>" class="form-control" readonly='true'>
                       </div><?php $cnt=$cnt+1;}} ?>
-                      <button type="submit" class="btn btn-primary mr-2" name="submit">Update</button>
+                      <button type="submit" class="btn btn-primary mr-2" name="submit">Actualizar</button>
                      
                     </form>
                   </div>

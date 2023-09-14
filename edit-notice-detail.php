@@ -35,11 +35,11 @@ $query->bindParam(':eid',$eid,PDO::PARAM_STR);
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Update Notice </h3>
+              <h3 class="page-title">Actualizar Noticia </h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"> Update Notice</li>
+                  <li class="breadcrumb-item active" aria-current="page"> Administrar Noticias</li>
                 </ol>
               </nav>
             </div>
@@ -48,7 +48,7 @@ $query->bindParam(':eid',$eid,PDO::PARAM_STR);
               <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title" style="text-align: center;">Update Notice</h4>
+                    <h4 class="card-title" style="text-align: center;">Actualizar Noticia</h4>
                    
                     <form class="forms-sample" method="post" enctype="multipart/form-data">
                       <?php
@@ -74,10 +74,10 @@ foreach($results as $row)
                           <option value="<?php  echo htmlentities($row->ClassId);?>"><?php  echo htmlentities($row->ClassName);?><?php  echo htmlentities($row->Section);?></option>
                          <?php 
 
-$sql2 = "SELECT * from    tblclass ";
-$query2 = $dbh -> prepare($sql2);
-$query2->execute();
-$result2=$query2->fetchAll(PDO::FETCH_OBJ);
+                  $sql2 = "SELECT * from    tblclass ";
+                  $query2 = $dbh -> prepare($sql2);
+                  $query2->execute();
+                  $result2=$query2->fetchAll(PDO::FETCH_OBJ);
 
 foreach($result2 as $row1)
 {          
@@ -91,7 +91,7 @@ foreach($result2 as $row1)
                         <textarea name="notmsg" value="" class="form-control" required='true'><?php  echo htmlentities($row->NoticeMsg);?></textarea>
                       </div>
                    <?php $cnt=$cnt+1;}} ?>
-                      <button type="submit" class="btn btn-primary mr-2" name="submit">Update</button>
+                      <button type="submit" class="btn btn-primary mr-2" name="submit">Actualizar</button>
                      
                     </form>
                   </div>

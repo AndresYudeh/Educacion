@@ -34,11 +34,11 @@ $query->bindParam(':eid',$eid,PDO::PARAM_STR);
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title"> Manage Class </h3>
+              <h3 class="page-title"> Administrar Clases </h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"> Manage Class</li>
+                  <li class="breadcrumb-item active" aria-current="page"> Administrar Clases</li>
                 </ol>
               </nav>
             </div>
@@ -47,7 +47,7 @@ $query->bindParam(':eid',$eid,PDO::PARAM_STR);
               <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title" style="text-align: center;">Manage Class</h4>
+                    <h4 class="card-title" style="text-align: center;">Administrar Clases</h4>
                    
                     <form class="forms-sample" method="post">
                       <?php
@@ -62,11 +62,11 @@ if($query->rowCount() > 0)
 foreach($results as $row)
 {               ?>  
                       <div class="form-group">
-                        <label for="exampleInputName1">Class Name</label>
+                        <label for="exampleInputName1">Nombre de la Clase</label>
                         <input type="text" name="cname" value="<?php  echo htmlentities($row->ClassName);?>" class="form-control" required='true'>
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputEmail3">Section</label>
+                        <label for="exampleInputEmail3">Paralelo</label>
                         <select  name="section" class="form-control" required='true'>
                           <option value="<?php  echo htmlentities($row->Section);?>"><?php  echo htmlentities($row->Section);?></option>
                           <option value="A">A</option>
@@ -77,7 +77,7 @@ foreach($results as $row)
                           <option value="F">F</option>
                         </select>
                       </div><?php $cnt=$cnt+1;}} ?>
-                      <button type="submit" class="btn btn-primary mr-2" name="submit">Update</button>
+                      <button type="submit" class="btn btn-primary mr-2" name="submit">Actualizar</button>
                      
                     </form>
                   </div>

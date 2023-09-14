@@ -32,11 +32,11 @@ $query->execute();
         <div class="main-panel">
           <div class="content-wrapper">
              <div class="page-header">
-              <h3 class="page-title"> Manage Students </h3>
+              <h3 class="page-title">  </h3>          
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"> Manage Students</li>
+                  <li class="breadcrumb-item active" aria-current="page"> Administrar Estudiantes</li>
                 </ol>
               </nav>
             </div>
@@ -45,20 +45,20 @@ $query->execute();
                 <div class="card">
                   <div class="card-body">
                     <div class="d-sm-flex align-items-center mb-4">
-                      <h4 class="card-title mb-sm-0">Manage Students</h4>
-                      <a href="#" class="text-dark ml-auto mb-3 mb-sm-0"> View all Students</a>
+                      <h4 class="card-title mb-sm-0">Administrar Estudiantes</h4>
+                      <!-- <a href="#" class="text-dark ml-auto mb-3 mb-sm-0"> View all Students</a> -->
                     </div>
                     <div class="table-responsive border rounded p-1">
                       <table class="table">
                         <thead>
                           <tr>
                             <th class="font-weight-bold">S.No</th>
-                            <th class="font-weight-bold">Student ID</th>
-                            <th class="font-weight-bold">Student Class</th>
-                            <th class="font-weight-bold">Student Name</th>
-                            <th class="font-weight-bold">Student Email</th>
-                            <th class="font-weight-bold">Admissin Date</th>
-                            <th class="font-weight-bold">Action</th>
+                            <th class="font-weight-bold">ID</th>
+                            <th class="font-weight-bold">Clase Perteneciente</th>
+                            <th class="font-weight-bold">Nombre</th>
+                            <th class="font-weight-bold">Correo Electrónico</th>
+                            <th class="font-weight-bold">Fecha de Admisión</th>
+                            <th class="font-weight-bold">Mod./Elim.</th>
                             
                           </tr>
                         </thead>

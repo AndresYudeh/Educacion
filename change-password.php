@@ -48,11 +48,11 @@ echo '<script>alert("Your current password is wrong")</script>';
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title"> Change Password </h3>
+              <h3 class="page-title"> Cambiar Contraseña </h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Change Password</li>
+                  <li class="breadcrumb-item active" aria-current="page">Cambiar Contraseña</li>
                 </ol>
               </nav>
             </div>
@@ -61,24 +61,24 @@ echo '<script>alert("Your current password is wrong")</script>';
               <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title" style="text-align: center;">Change Password</h4>
+                    <h4 class="card-title" style="text-align: center;"></h4>
                    
                     <form class="forms-sample" name="changepassword" method="post" onsubmit="return checkpass();">
                       
                       <div class="form-group">
-                        <label for="exampleInputName1">Current Password</label>
+                        <label for="exampleInputName1">Contraseña Actual</label>
                         <input type="password" name="currentpassword" id="currentpassword" class="form-control" required="true">
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputEmail3">New Password</label>
+                        <label for="exampleInputEmail3">Nueva Contraseña</label>
                         <input type="password" name="newpassword"  class="form-control" required="true">
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputPassword4">Confirm Password</label>
+                        <label for="exampleInputPassword4">Confirmar Contraseña</label>
                         <input type="password" name="confirmpassword" id="confirmpassword" value=""  class="form-control" required="true">
                       </div>
                       
-                      <button type="submit" class="btn btn-primary mr-2" name="submit">Change</button>
+                      <button type="submit" class="btn btn-primary mr-2" name="submit">Cambiar</button>
                      
                     </form>
                   </div>

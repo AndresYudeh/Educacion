@@ -37,11 +37,11 @@ $query->execute();
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title"> Admin Profile </h3>
+              <h3 class="page-title"> Administar Perfil </h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Admin Profile</li>
+                  <li class="breadcrumb-item active" aria-current="page">Administar Perfil</li>
                 </ol>
               </nav>
             </div>
@@ -50,7 +50,7 @@ $query->execute();
               <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title" style="text-align: center;">Admin Profile</h4>
+                    <h4 class="card-title" style="text-align: center;">Administradores</h4>
                    
                     <form class="forms-sample" method="post">
                       <?php
@@ -65,26 +65,26 @@ if($query->rowCount() > 0)
 foreach($results as $row)
 {               ?>
                       <div class="form-group">
-                        <label for="exampleInputName1">Admin Name</label>
+                        <label for="exampleInputName1">Nombre</label>
                         <input type="text" name="adminname" value="<?php  echo $row->AdminName;?>" class="form-control" required='true'>
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputEmail3">User Name</label>
+                        <label for="exampleInputEmail3">Usuario</label>
                         <input type="text" name="username" value="<?php  echo $row->UserName;?>" class="form-control" readonly="">
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputPassword4">Contact Number</label>
+                        <label for="exampleInputPassword4">Número de Contacto</label>
                         <input type="text" name="mobilenumber" value="<?php  echo $row->MobileNumber;?>"  class="form-control" maxlength='10' required='true' pattern="[0-9]+">
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputCity1">Email</label>
+                        <label for="exampleInputCity1">Correo Electrónico</label>
                          <input type="email" name="email" value="<?php  echo $row->Email;?>" class="form-control" required='true'>
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputCity1">Admin Registration Date</label>
+                        <label for="exampleInputCity1">Fecha de Registro</label>
                          <input type="text" name="" value="<?php  echo $row->AdminRegdate;?>" readonly="" class="form-control">
                       </div><?php $cnt=$cnt+1;}} ?> 
-                      <button type="submit" class="btn btn-primary mr-2" name="submit">Update</button>
+                      <button type="submit" class="btn btn-primary mr-2" name="submit">Actualizar</button>
                      
                     </form>
                   </div>

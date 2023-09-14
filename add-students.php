@@ -87,11 +87,11 @@ echo "<script>alert('Username or Student Id  already exist. Please try again');<
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title"> Add Students </h3>
+              <h3 class="page-title"> Agregar Estudiante </h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"> Add Students</li>
+                  <li class="breadcrumb-item active" aria-current="page"> Agregar Estudiante</li>
                 </ol>
               </nav>
             </div>
@@ -105,17 +105,17 @@ echo "<script>alert('Username or Student Id  already exist. Please try again');<
                     <form class="forms-sample row" method="post" enctype="multipart/form-data" >
                       
                       <div class="form-group col-md-6">
-                        <label for="exampleInputName1">Student Name</label>
+                        <label for="exampleInputName1">Nombre</label>
                         <input type="text" name="stuname" value="" class="form-control" required='true'>
                       </div>
                       <div class="form-group col-md-6">
-                        <label for="exampleInputName1">Student Email</label>
+                        <label for="exampleInputName1">Correo Electrónico</label>
                         <input type="text" name="stuemail" value="" class="form-control" required='true'>
                       </div>
                       <div class="form-group col-md-6">
-                        <label for="exampleInputEmail3">Student Class</label>
+                        <label for="exampleInputEmail3">Clase</label>
                         <select  name="stuclass" class="form-control" required='true'>
-                          <option value="">Select Class</option>
+                          <option value="">Clases Disponibles</option>
                          <?php 
 
 $sql2 = "SELECT * from    tblclass ";
@@ -131,57 +131,57 @@ foreach($result2 as $row1)
                         </select>
                       </div>
                       <div class="form-group col-md-6">
-                        <label for="exampleInputName1">Gender</label>
+                        <label for="exampleInputName1">Genero</label>
                         <select name="gender" value="" class="form-control" required='true'>
-                          <option value="">Choose Gender</option>
-                          <option value="Male">Male</option>
-                          <option value="Female">Female</option>
+                          <option value="">Selecciona un Genero</option>
+                          <option value="Male">Masculino</option>
+                          <option value="Female">Femenino</option>
                         </select>
                       </div>
                       <div class="form-group col-md-6">
-                        <label for="exampleInputName1">Date of Birth</label>
+                        <label for="exampleInputName1">Fecha de Nacimiento</label>
                         <input type="date" name="dob" value="" class="form-control" required='true'>
                       </div>
                      
                       <div class="form-group col-md-6">
-                        <label for="exampleInputName1">Student ID</label>
+                        <label for="exampleInputName1">ID de Estudiante</label>
                         <input type="text" name="stuid" value="" class="form-control" required='true'>
                       </div>
                       <div class="form-group col-md-6">
-                        <label for="exampleInputName1">Student Photo</label>
+                        <label for="exampleInputName1">Foto de Estudiante</label>
                         <input type="file" name="image" value="" class="form-control" required='true'>
                       </div>
-                      <h3 class="col-md-12">Parents/Guardian's details</h3>
+                      <h3 class="col-md-12">Datos Parentales</h3>
                       <div class="form-group col-md-6">
-                        <label for="exampleInputName1">Father's Name</label>
+                        <label for="exampleInputName1">Nombre de Papá</label>
                         <input type="text" name="fname" value="" class="form-control" required='true'>
                       </div>
                       <div class="form-group col-md-6">
-                        <label for="exampleInputName1">Mother's Name</label>
+                        <label for="exampleInputName1">Nombre de Mamá</label>
                         <input type="text" name="mname" value="" class="form-control" required='true'>
                       </div>
                       <div class="form-group col-md-6">
-                        <label for="exampleInputName1">Contact Number</label>
+                        <label for="exampleInputName1">Número de Contacto</label>
                         <input type="text" name="connum" value="" class="form-control" required='true' maxlength="10" pattern="[0-9]+">
                       </div>
                       <div class="form-group col-md-6">
-                        <label for="exampleInputName1">Alternate Contact Number</label>
+                        <label for="exampleInputName1">Otro Número de Contacto</label>
                         <input type="text" name="altconnum" value="" class="form-control" required='true' maxlength="10" pattern="[0-9]+">
                       </div>
                       <div class="form-group col-md-12">
-                        <label for="exampleInputName1">Address</label>
+                        <label for="exampleInputName1">Dirección de Domicilio</label>
                         <textarea name="address" class="form-control"></textarea>
                       </div>
-                    <h3 class="col-md-12">Login details</h3>
+                    <h3 class="col-md-12">Detalles de Registro</h3>
                     <div class="form-group col-md-6">
-                        <label for="exampleInputName1">User Name</label>
+                        <label for="exampleInputName1">Usuario</label>
                         <input type="text" name="uname" value="" class="form-control" required='true'>
                       </div>
                       <div class="form-group col-md-6">
-                        <label for="exampleInputName1">Password</label>
+                        <label for="exampleInputName1">Contraseña</label>
                         <input type="Password" name="password" value="" class="form-control" required='true'>
                       </div>
-                      <button type="submit" class="btn btn-primary mr-2" name="submit">Add</button>
+                      <button type="submit" class="btn btn-primary mr-2" name="submit">Agregar</button>
                      
                     </form>
                   </div>

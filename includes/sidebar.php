@@ -83,7 +83,7 @@
               </a>
               <div class="collapse" id="auth1">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="add-public-notice.php"> Agg Noticia Pública </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="add-public-notice.php"> Agg. Noticia Pública </a></li>
                   <li class="nav-item"> <a class="nav-link" href="manage-public-notice.php"> Administrar Noticias Públicas </a></li>
                 </ul>
               </div>

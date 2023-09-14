@@ -47,7 +47,7 @@ echo "<script>alert('Invalid Details');</script>";
 <html lang="en">
   <head>
   
-    <title>Edu Authorities Student Management System|| Login Page</title>
+    <title>Gestión de Estudiantes | Inicio de Sesión</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets/vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
@@ -76,25 +76,25 @@ echo "<script>alert('Invalid Details');</script>";
                 <div class="brand-logo">
                   <img src="assets/images/logo.png">
                 </div>
-                <h4>Hello! let's get started</h4>
-                <h6 class="font-weight-light">Sign in to continue.</h6>
+                <h4>¡Es un placer verte! Comencemos</h4>
+                <h6 class="font-weight-light">Inicie sesión para continuar.</h6>
                 <form class="pt-3" id="login" method="post" name="login">
                   <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" placeholder="enter your username" required="true" name="username" value="<?php if(isset($_COOKIE["user_login"])) { echo $_COOKIE["user_login"]; } ?>" >
+                    <input type="text" class="form-control form-control-lg" placeholder="ingrese su usuario" required="true" name="username" value="<?php if(isset($_COOKIE["user_login"])) { echo $_COOKIE["user_login"]; } ?>" >
                   </div>
                   <div class="form-group">
                     
-                    <input type="password" class="form-control form-control-lg" placeholder="enter your password" name="password" required="true" value="<?php if(isset($_COOKIE["userpassword"])) { echo $_COOKIE["userpassword"]; } ?>">
+                    <input type="password" class="form-control form-control-lg" placeholder="ingrese su contraseña" name="password" required="true" value="<?php if(isset($_COOKIE["userpassword"])) { echo $_COOKIE["userpassword"]; } ?>">
                   </div>
                   <div class="mt-3">
-                    <button class="btn btn-success btn-block loginbtn" name="login" type="submit">Login</button>
+                    <button class="btn btn-success btn-block loginbtn" name="login" type="submit">Ingresar</button>
                   </div>
                   <div class="my-2 d-flex justify-content-between align-items-center">
                     <div class="form-check">
                       <label class="form-check-label text-muted">
-                        <input type="checkbox" id="remember" class="form-check-input" name="remember" <?php if(isset($_COOKIE["user_login"])) { ?> checked <?php } ?> /> Keep me signed in </label>
+                        <!-- <input type="checkbox" id="remember" class="form-check-input" name="remember" <?php if(isset($_COOKIE["user_login"])) { ?> checked <?php } ?> /> Keep me signed in </label> -->
                     </div>
-                    <a href="forgot-password.php" class="auth-link text-black">Forgot password?</a>
+                    <a href="forgot-password.php" class="auth-link text-black">¿Has olvidado tu contraseña?</a>
                   </div>
          <!--          <div class="mb-2">
                     <a href="../index.php" class="btn btn-block btn-facebook auth-form-btn">

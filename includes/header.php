@@ -3,6 +3,8 @@
   <head>
    
     <title>Gestión de Estudiantes</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{url_for('ico', filename = 'car.png')}}" />
+
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets/vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">

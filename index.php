@@ -76,7 +76,7 @@ echo "<script>alert('Invalid Details');</script>";
             <div class="col-lg-4 mx-auto">
               <div class="auth-form-light text-center p-5">
                 <div class="brand-logo">
-                  <img src="assets/images/logo.png">
+                  <img src="assets/images/logex.png">
                 </div>
                 <h4>¡Es un placer verte! Comencemos</h4>
                 <h6 class="font-weight-light">Inicie sesión para continuar.</h6>

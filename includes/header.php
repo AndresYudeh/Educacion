@@ -3,7 +3,7 @@
   <head>
    
     <title>Gestión de Estudiantes</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{url_for('ico', filename = 'car.png')}}" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/libros.ico" />
 
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets/vendors/simple-line-icons/css/simple-line-icons.css">

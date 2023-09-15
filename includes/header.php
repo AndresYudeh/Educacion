@@ -48,6 +48,8 @@ return true;
     <div id="page"></div>
 <div id="loading"></div>
     <div class="container-scroller">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/libros.ico" />
+
  <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="navbar-brand-wrapper d-flex align-items-center">
           <a class="navbar-brand brand-logo ml-auto text-right" href="dashboard.php">

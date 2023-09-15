@@ -48,6 +48,8 @@ echo "<script>alert('Invalid Details');</script>";
   <head>
   
     <title>Gestión de Estudiantes | Inicio de Sesión</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/libros.ico" />
+
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets/vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">

@@ -53,9 +53,9 @@ return true;
  <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="navbar-brand-wrapper d-flex align-items-center">
           <a class="navbar-brand brand-logo ml-auto text-right" href="dashboard.php">
-            <img src="assets/images/logex.png" alt="logo" />
+            <img src="assets/images/logex.jpeg" alt="logo" />
           </a>
-          <a class="navbar-brand brand-logo-mini" href="dashboard.php"><img src="assets/images/logex.png" alt="logo" /></a>
+          <a class="navbar-brand brand-logo-mini" href="dashboard.php"><img src="assets/images/logex.jpeg" alt="logo" /></a>
         </div><?php
          $aid= $_SESSION['sturecmsaid'];
 $sql="SELECT * from tbladmin where ID=:aid";
